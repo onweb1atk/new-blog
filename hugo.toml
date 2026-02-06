@@ -1,0 +1,8 @@
+baseURL = 'https://onweb1atk.github.io/'
+languageCode = 'zh-cn'
+title = 'My Archive'
+theme = 'book' # 暂定这个最符合你侧边栏要求的主题
+
+[params]
+  BookTheme = 'dark'
+  BookFontFamily = '"SF Pro Local", -apple-system, sans-serif'
