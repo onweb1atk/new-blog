@@ -4,8 +4,6 @@ title = 'My Archive'
 theme = 'hugo-book'
 
 [params]
-  BookTheme = 'dark'
-  # 这一行是关键：加载我们刚写的 custom.css
+  BookLogo = 'logo.png' # 不要加斜杠，直接写文件名
+  # 之前提到的反色滤镜
   BookCustomStyle = 'css/custom.css'
-  # 侧边栏 Logo 设置
-  BookLogo = 'logo.png'
