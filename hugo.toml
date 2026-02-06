@@ -1,13 +1,8 @@
-baseURL = 'https://onweb1atk.github.io/'
+baseURL = 'https://你的用户名.github.io/'
 languageCode = 'zh-cn'
 title = 'My Archive'
-
-# 核心修改：不再找本地文件夹，直接找云端
-[module]
-  [[module.imports]]
-    path = "github.com/alex-shpak/hugo-book"
+theme = 'hugo-book' # 这里的名称必须和上面脚本里克隆的文件夹名一致
 
 [params]
   BookTheme = 'dark'
-  # 之前调好的样式
   BookFontFamily = '"SF Pro Local", -apple-system, sans-serif'
