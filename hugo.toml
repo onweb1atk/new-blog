@@ -7,4 +7,4 @@ theme = 'hugo-book'
   BookCustomStyle = 'css/custom.css'
   BookTheme = 'dark'
   BookMenuBundle = false
-  
+  BookCustomJS = "js/egg.js"
