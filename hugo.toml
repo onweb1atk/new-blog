@@ -1,8 +1,13 @@
 baseURL = 'https://onweb1atk.github.io/'
 languageCode = 'zh-cn'
 title = 'My Archive'
-theme = 'hugo-book'
+
+# 核心修改：不再找本地文件夹，直接找云端
+[module]
+  [[module.imports]]
+    path = "github.com/alex-shpak/hugo-book"
 
 [params]
   BookTheme = 'dark'
+  # 之前调好的样式
   BookFontFamily = '"SF Pro Local", -apple-system, sans-serif'
