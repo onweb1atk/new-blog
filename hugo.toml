@@ -4,7 +4,7 @@ title = 'My Archive'
 theme = 'hugo-book'
 
 [params]
-  BookLogo = 'logo.png' # 不要加斜杠，直接写文件名
-  # 之前提到的反色滤镜
+  # 尝试改为绝对路径引用，或者直接写文件名
+  BookLogo = 'logo.png' 
+  # 确保这个路径也加上了
   BookCustomStyle = 'css/custom.css'
-  BookTheme = 'dark'
