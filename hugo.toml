@@ -1,8 +1,11 @@
-baseURL = 'https://onweb1atk.github.io/'
+baseURL = 'https://你的用户名.github.io/'
 languageCode = 'zh-cn'
 title = 'My Archive'
-theme = 'book' # 暂定这个最符合你侧边栏要求的主题
+
+# 核心修改：直接指定远程主题地址
+theme = "github.com/alex-shpak/hugo-book"
 
 [params]
+  # 保持你的审美偏好
   BookTheme = 'dark'
   BookFontFamily = '"SF Pro Local", -apple-system, sans-serif'
