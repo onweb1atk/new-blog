@@ -8,3 +8,4 @@ theme = 'hugo-book'
   BookLogo = 'logo.png' 
   # 确保这个路径也加上了
   BookCustomStyle = 'css/custom.css'
+  BookTheme = 'dark'
