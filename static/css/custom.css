@@ -1,0 +1,27 @@
+/* 强制加载本地 SF Pro 字体 */
+@font-face {
+    font-family: "SF Pro Local";
+    src: url("/SF-Pro.ttf") format("truetype");
+}
+
+body {
+    font-family: "SF Pro Local", -apple-system, BlinkMacSystemFont, sans-serif !important;
+    text-align: left !important;
+}
+
+/* 调整侧边栏宽度与质感 */
+.book-menu {
+    flex: 0 0 20% !important; /* 强制占比五分之一 */
+    border-right: 1px solid #333;
+}
+
+/* 调整右侧内容区留白 */
+.book-page {
+    padding: 60px 40px !important;
+    max-width: 800px !important;
+}
+
+/* 导航栏 Logo 永久反色 */
+.book-brand img {
+    filter: invert(1) !important;
+}
