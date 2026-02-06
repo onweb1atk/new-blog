@@ -19,11 +19,14 @@ jobs:
           submodules: true  # 尝试拉取子模块
           fetch-depth: 0    # 拉取完整历史
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
-          extended: true
+      - name: Build with Hugo
+        run: |
+          # 1. 如果 themes 文件夹不存在，就创建一个
+          mkdir -p themes
+          # 2. 把主题代码直接克隆到 themes/hugo-book 文件夹里
+          git clone https://github.com/alex-shpak/hugo-book themes/hugo-book
+          # 3. 开始构建
+          hugo --minify
           
       - name: Build with Hugo
         # 增加 hugo mod get 这一行，强制它去云端抓主题
