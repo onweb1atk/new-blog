@@ -38,3 +38,20 @@ body {
 .book-page h1 {
     text-align: left !important;
 }
+
+/* 彻底修复 Logo 变形 */
+.book-brand img {
+    display: block !important;
+    width: 160px !important;    /* 1. 只固定宽度，高度设为 auto */
+    height: auto !important;     /* 2. 关键：让高度根据比例自动缩放 */
+    max-width: 100% !important;  /* 防止超出侧边栏边界 */
+    object-fit: contain !important; /* 确保内容完整包含在框内 */
+    filter: invert(1) !important;   /* 保持黑变白 */
+    margin-bottom: 20px !important;
+}
+
+/* 如果你使用了之前那个 "a::before" 的暴力注入法，请将其删掉 */
+/* 那个方法虽然稳，但很难控制原始比例 */
+.book-brand a::before {
+    display: none !important;
+}
