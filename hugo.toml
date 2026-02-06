@@ -4,9 +4,6 @@ title = "1atk's archive"
 theme = 'hugo-book'
 
 [params]
-  # 尝试改为绝对路径引用，或者直接写文件名
-  BookLogo = 'logo.png' 
-  # 确保这个路径也加上了
   BookCustomStyle = 'css/custom.css'
   BookTheme = 'dark'
   BookMenuBundle = false
