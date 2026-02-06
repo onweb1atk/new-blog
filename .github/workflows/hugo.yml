@@ -16,8 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # 关键：这行告诉机器人自动去下载主题，不用我们手动写 clone
-          submodules: recursive 
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -25,6 +23,13 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+
+      - name: Force Install Theme
+        # 这一步是核心：不管仓库里有没有，直接现场克隆主题到指定位置
+        run: |
+          mkdir -p themes
+          rm -rf themes/hugo-book
+          git clone --depth 1 https://github.com/alex-shpak/hugo-book themes/hugo-book
 
       - name: Build with Hugo
         run: hugo --minify
