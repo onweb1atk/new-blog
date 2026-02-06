@@ -7,4 +7,5 @@ theme = 'hugo-book'
   BookCustomStyle = 'css/custom.css'
   BookTheme = 'dark'
   BookMenuBundle = false
+  # 必须是这样，对应 static/js/egg.js
   BookCustomJS = "js/egg.js"
