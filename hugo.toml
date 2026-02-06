@@ -1,4 +1,4 @@
-baseURL = 'https://onweb1atk.github.io/'
+baseURL = 'https://onweb1atk.github.io/new-blog/'
 languageCode = 'zh-cn'
 title = 'My Archive'
 theme = 'hugo-book'
