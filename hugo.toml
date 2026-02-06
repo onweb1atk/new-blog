@@ -1,8 +1,11 @@
-baseURL = 'https://你的用户名.github.io/'
+baseURL = 'https://onweb1atk.github.io/'
 languageCode = 'zh-cn'
 title = 'My Archive'
 theme = 'hugo-book'
 
 [params]
   BookTheme = 'dark'
-  BookFontFamily = '"SF Pro Local", -apple-system, sans-serif'
+  # 这一行是关键：加载我们刚写的 custom.css
+  BookCustomStyle = 'css/custom.css'
+  # 侧边栏 Logo 设置
+  BookLogo = 'logo.png'
