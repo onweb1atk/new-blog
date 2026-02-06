@@ -25,3 +25,16 @@ body {
 .book-brand img {
     filter: invert(1) !important;
 }
+/* 强制 Logo 大小和对齐 */
+.book-brand img {
+    height: 40px !important;
+    width: auto !important;
+    display: block !important;
+    margin-bottom: 20px !important;
+    filter: invert(1) !important; /* 确保黑变白 */
+}
+
+/* 移除首页标题居中，保持全站左对齐 */
+.book-page h1 {
+    text-align: left !important;
+}
