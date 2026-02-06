@@ -1,6 +1,6 @@
 baseURL = 'https://onweb1atk.github.io/new-blog/'
 languageCode = 'zh-cn'
-title = 'My Archive'
+title = '1atk's archive'
 theme = 'hugo-book'
 
 [params]
@@ -9,3 +9,5 @@ theme = 'hugo-book'
   # 确保这个路径也加上了
   BookCustomStyle = 'css/custom.css'
   BookTheme = 'dark'
+
+  
