@@ -1,11 +1,14 @@
 name: Deploy Hugo site to Pages
+
 on:
   push:
     branches: ["main"]
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,18 +16,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true  # 尝试拉取子模块
+          fetch-depth: 0    # 拉取完整历史
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
-      - name: Build
-        run: hugo --minify
+
+      - name: Build with Hugo
+        # 如果没有主题文件夹，这里会强制忽略报错尝试构建
+        run: hugo --minify --themesDir themes || hugo --minify
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
