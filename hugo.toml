@@ -9,5 +9,5 @@ theme = 'hugo-book'
   # 确保这个路径也加上了
   BookCustomStyle = 'css/custom.css'
   BookTheme = 'dark'
-
+  BookMenuBundle = false
   
