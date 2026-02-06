@@ -7,3 +7,4 @@ theme = 'hugo-book'
   BookLogo = 'logo.png' # 不要加斜杠，直接写文件名
   # 之前提到的反色滤镜
   BookCustomStyle = 'css/custom.css'
+  BookTheme = 'dark'
