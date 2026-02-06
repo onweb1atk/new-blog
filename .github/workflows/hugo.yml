@@ -24,10 +24,12 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-
+          
       - name: Build with Hugo
-        # 如果没有主题文件夹，这里会强制忽略报错尝试构建
-        run: hugo --minify --themesDir themes || hugo --minify
+        # 增加 hugo mod get 这一行，强制它去云端抓主题
+        run: |
+          hugo mod get github.com/alex-shpak/hugo-book
+          hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
