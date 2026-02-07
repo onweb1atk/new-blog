@@ -1,6 +1,6 @@
 ---
-title: "Hidden Archive"
-# 彻底在搜索结果中隐藏此页面
+title: "私密存档"
+type: "docs"
 bookSearchExclude: true
 ---
 
