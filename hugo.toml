@@ -5,6 +5,9 @@ theme = 'hugo-book'
 buildFuture = true
 buildDrafts = true
 
+[markup.goldmark.renderer]
+  hardWraps = true
+
 [params]
   BookCustomStyle = 'css/custom.css'
   BookTheme = 'dark'
